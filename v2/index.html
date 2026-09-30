@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nova — Find your next night out</title>
+  <meta name="description" content="Nova: find things to do in Kampala and across East Africa. Book in seconds with Mobile Money.">
+  <meta name="theme-color" content="#061433">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/v2.css">
+  <link rel="icon" type="image/png" href="logo2.png">
+</head>
+<body class="v2">
+  <a class="skip-link" href="#app">Skip to content</a>
+  <header class="site-header n2-header">
+    <div class="n2-hwrap">
+      <a href="#/" class="n2-logo" aria-label="Nova home">
+        <img src="logo.jpg" alt="" width="42" height="42"><span>nova<i>.</i></span>
+      </a>
+
+      <form class="n2-hsearch" id="headerSearch" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+        <input type="search" name="q" placeholder="Search events" aria-label="Search events">
+        <span class="n2-div"></span>
+        <label class="n2-hloc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><input type="text" name="loc" placeholder="Kampala" aria-label="Location"></label>
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg></button>
+      </form>
+
+      <nav class="header-nav n2-nav" id="headerNav" aria-label="Main"></nav>
+
+      <div class="n2-secure" aria-hidden="true">
+        <span class="n2-vdiv"></span>
+        <span class="n2-lock"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v3H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-1V7a5 5 0 00-5-5zm-3 8V7a3 3 0 016 0v3z"/></svg><b>Secure checkout</b></span>
+        <span class="n2-help">Need help? <a href="#/help">Chat with us</a></span>
+      </div>
+
+      <a href="#/search" class="n2-hicon n2-msearch" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg></a>
+      <button class="menu-toggle n2-hicon" id="menuToggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="n2-footer">
+    <div class="n2-wrap">
+      <div class="n2-ftop">
+        <div class="n2-fbrand">
+          <a href="#/" class="n2-logo n2-logo-dark"><img src="logo.jpg" alt="" width="40" height="40"><span>nova<i>.</i></span></a>
+          <p>Find your next night out in Kampala and across East Africa. Pay with Mobile Money and your tickets arrive instantly.</p>
+        </div>
+        <div class="n2-fcols">
+          <div><strong>Discover</strong><a href="#/search?date=weekend">This weekend</a><a href="#/search?price=free">Free events</a><a href="#/search?online=1">Online</a><a href="#/search">Categories</a></div>
+          <div><strong>Cities</strong><a href="#/search?loc=Kampala">Kampala</a><a href="#/search?loc=Entebbe">Entebbe</a><a href="#/search?loc=Jinja">Jinja</a><a href="#/search?loc=Nairobi">Nairobi</a></div>
+          <div><strong>Organisers</strong><a href="#/create">Create an event</a><a href="#/pricing">Pricing</a><a href="#/manage">Dashboard</a></div>
+          <div><strong>Help</strong><a href="#/help">Help centre</a><a href="#/help">Refunds</a><a href="#/terms">Terms</a><a href="#/privacy">Privacy</a></div>
+        </div>
+      </div>
+      <div class="n2-fbottom">
+        <div class="n2-pay"><span class="pay-mtn">MTN MoMo</span><span class="pay-airtel">Airtel Money</span><span class="pay-card">VISA · Mastercard</span></div>
+        <div class="n2-fcopy"><img src="logo2.png" alt="" width="30" height="30"><span>© <span id="year"></span> Nova · Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span></div>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="n2-tabbar" id="tabbar" aria-label="Quick navigation">
+    <a href="#/" data-tab=""><svg viewBox="0 0 24 24"><path d="M12 2l2.9 7.1L22 12l-7.1 2.9L12 22l-2.9-7.1L2 12l7.1-2.9z"/></svg>Explore</a>
+    <a href="#/search" data-tab="search"><svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>Search</a>
+    <a href="#/tickets" data-tab="tickets"><svg viewBox="0 0 24 24" class="stroke"><path d="M3 8a2 2 0 002-2h14a2 2 0 002 2v2a2 2 0 000 4v2a2 2 0 00-2 2H5a2 2 0 00-2-2v-2a2 2 0 000-4z"/></svg>Tickets</a>
+    <a href="#/account" data-tab="account"><svg viewBox="0 0 24 24" class="stroke"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg>Account</a>
+  </nav>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/v2.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

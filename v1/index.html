@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — Discover & host events</title>
+  <meta name="description" content="Nova: find things to do near you, buy tickets, and host your own events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322c3ff'/%3E%3Cstop offset='.5' stop-color='%23007bff'/%3E%3Cstop offset='1' stop-color='%235b3cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='12' fill='url(%23g)'/%3E%3Cpath d='M20 8.5l2.9 8.6 8.6 2.9-8.6 2.9-2.9 8.6-2.9-8.6-8.6-2.9 8.6-2.9z' fill='white'/%3E%3Ccircle cx='31' cy='9' r='2.3' fill='%23ffd166'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" aria-label="Nova home">
+        <span class="logo-img"><img src="logo.jpg" alt="Nova logo" width="44" height="44"></span><span class="logo-text">nova<i>.</i></span>
+      </a>
+
+      <form class="header-search" id="headerSearch" role="search">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+        <input type="search" name="q" placeholder="Search events" aria-label="Search events">
+        <span class="divider"></span>
+        <input type="text" name="loc" placeholder="Anywhere" aria-label="Location" class="hs-loc-input">
+        <button type="submit" class="search-btn" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg></button>
+      </form>
+
+      <nav class="header-nav" id="headerNav"></nav>
+      <a href="#/about" class="logo2" aria-label="About Nova"><img src="logo2.avif" alt="" width="40" height="40"></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a href="#/" class="logo logo-sm" aria-label="Nova home"><span class="logo-img sm"><img src="logo.jpg" alt="" width="28" height="28"></span><span class="logo-text">nova<i>.</i></span></a>
+      <nav class="footer-links"><a href="#/about">About</a><a href="#/pricing">Pricing</a><a href="#/help">Help</a><a href="#/terms">Terms</a><a href="#/privacy">Privacy</a></nav>
+      <span class="footer-copy">© <span id="year"></span> Nova · Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+    </div>
+  </footer>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

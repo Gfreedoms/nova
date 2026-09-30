@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova — design versions</title>
+<meta name="description" content="Nova event discovery and ticketing for Kampala: every design direction in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#101114; --muted:#5f636b; --line:#e7e8ea; --bg:#ffffff; --card:#f6f7f8; --accent:#101114; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 40px 0 8px; }
+  .brand { font-weight: 800; font-size: 22px; letter-spacing: -.02em; }
+  h1 { font-size: clamp(30px, 4.4vw, 48px); line-height: 1.05; letter-spacing: -.03em; margin: 22px 0 10px; font-weight: 800; }
+  .lead { color: var(--muted); font-size: 17px; line-height: 1.5; margin: 0; max-width: 640px; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 32px 0 40px; }
+  .card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; text-decoration: none; transition: transform .15s, box-shadow .15s; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(16,17,20,.12); }
+  .card:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .shot { aspect-ratio: 16 / 9; background: #e9eaec center top / cover no-repeat; border-bottom: 1px solid var(--line); }
+  .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .num { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .tag { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #fff; border: 1px solid var(--line); }
+  h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
+  .body p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.5; }
+  .go { margin-top: 6px; font-weight: 800; font-size: 14px; }
+  .soon { cursor: default; }
+  .soon .shot { display: grid; place-items: center; color: var(--muted); font-weight: 700; background: repeating-linear-gradient(135deg, #f1f2f3 0 12px, #eceef0 12px 24px); }
+  .soon:hover { transform: none; box-shadow: none; }
+  footer { border-top: 1px solid var(--line); padding: 18px 0 28px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; gap: 16px; } header { padding-top: 28px; } }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">nova.</div>
+    <h1>Every Nova design, in one place.</h1>
+    <p class="lead">Event discovery and ticketing for Kampala and East Africa. Each version is a working demo: browse events, filter, open an event and go through checkout (payments are simulated). Pick a design to try it.</p>
+  </header>
+  <main class="wrap">
+    <div class="grid">
+      <a class="card" href="v1/">
+        <div class="shot" style="background-image:url(thumbs/v1.jpg)" role="img" aria-label="Design 1 home page"></div>
+        <div class="body"><div class="top"><span class="num">Design 1</span><span class="tag">Original</span></div>
+          <h2>Nova Events</h2><p>The first build: clean blue interface, animated hero with floating event cards, full booking flow.</p><span class="go">Open design 1 →</span></div>
+      </a>
+      <a class="card" href="v2/">
+        <div class="shot" style="background-image:url(thumbs/v2.jpg)" role="img" aria-label="Design 2 home page"></div>
+        <div class="body"><div class="top"><span class="num">Design 2</span><span class="tag">Claude Design redesign</span></div>
+          <h2>Nova v2</h2><p>Refined blue look from the first Claude Design pass, with a step-by-step Mobile Money checkout and matched phone layout.</p><span class="go">Open design 2 →</span></div>
+      </a>
+      <a class="card" href="v3/">
+        <div class="shot" style="background-image:url(thumbs/v3.jpg)" role="img" aria-label="Design 3 home page"></div>
+        <div class="body"><div class="top"><span class="num">Design 3</span><span class="tag">City magazine</span></div>
+          <h2>Kampala after dark</h2><p>Editorial style with bold type, a 7-day picker, teal accents, map search, ticket stubs and organiser tools.</p><span class="go">Open design 3 →</span></div>
+      </a>
+      <div class="card soon" aria-label="Design 4, coming soon">
+        <div class="shot">In progress</div>
+        <div class="body"><div class="top"><span class="num">Design 4</span><span class="tag">Coming soon</span></div>
+          <h2>Mobile-first final</h2><p>A new app-like design built for phones first, being designed now.</p></div>
+      </div>
+    </div>
+  </main>
+  <footer class="wrap">Nova demo · data is stored only in your browser · payments are simulated</footer>
+</body>
+</html>

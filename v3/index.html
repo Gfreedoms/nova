@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nova — Kampala after dark</title>
+  <meta name="description" content="Nova: a city magazine that sells tickets. Find what's on in Kampala, Entebbe, Jinja and Nairobi, and pay with Mobile Money.">
+  <meta name="theme-color" content="#15120F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/v3.css">
+  <link rel="stylesheet" href="css/v3-home.css">
+  <link rel="stylesheet" href="css/v3-search.css">
+  <link rel="stylesheet" href="css/v3-event.css">
+  <link rel="stylesheet" href="css/v3-checkout.css">
+  <link rel="stylesheet" href="css/v3-tickets.css">
+  <link rel="stylesheet" href="css/v3-organiser.css">
+</head>
+<body class="v3">
+  <a class="skip-link" href="#app">Skip to content</a>
+  <header class="n3-header" id="siteHeader">
+    <div class="n3-wrap n3-hd" id="n3Hd">
+      <a class="n3-hd-logo" href="#/" aria-label="Nova home"><span class="n3-wordmark" aria-hidden="true">N<span class="moon"><i></i></span>VA</span></a>
+      <span class="n3-hd-secure-t">Secure checkout</span>
+      <nav id="headerNav" class="n3-hd-nav" aria-label="Main"></nav>
+      <form id="headerSearch" class="n3-hd-search" role="search" action="#/search">
+        <svg class="n3-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <label class="n3-sr" for="hdQ">Search events</label>
+        <input id="hdQ" name="q" type="search" placeholder="Afro-jazz, comedy, rolex…" autocomplete="off">
+        <input name="loc" type="hidden">
+      </form>
+      <div class="n3-hd-right" id="headerRight"></div>
+      <div class="n3-hd-mob">
+        <button type="button" class="n3-hd-cityb" id="mobCity" aria-haspopup="true" aria-expanded="false" aria-controls="n3Cities">Kampala</button>
+        <button type="button" class="n3-hd-lite" id="mobLite" aria-pressed="false" title="Lite mode: hides photos to save data">Lite</button>
+        <button type="button" class="n3-iconbtn sm" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="n3Drawer"><svg class="n3-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+      </div>
+      <div class="n3-hd-co" id="n3HdCheckout"><span id="n3HdTimer"></span><a class="n3-hd-back" id="n3HdBack" href="#/">Back to event</a></div>
+      <div class="n3-menu n3-mega" id="n3Mega" role="menu" aria-label="Explore"></div>
+      <div class="n3-menu n3-cities" id="n3Cities" role="menu" aria-label="Choose a city"></div>
+      <div class="n3-menu right n3-acct" id="n3Acct" role="menu" aria-label="Account"></div>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="n3-footer n3-footer-min" id="siteFooter">
+    <div class="n3-wrap n3-fm">
+      <a href="#/" class="n3-fm-logo" aria-label="Nova home"><span class="n3-wordmark night">N<span class="moon"><i></i></span>VA</span></a>
+      <nav class="n3-fm-links" aria-label="Footer"><a href="#/search">Explore</a><a href="#/create">Host an event</a><a href="#/pricing">Pricing</a><a href="#/help">Help</a><a href="#/terms">Terms</a><a href="#/privacy">Privacy</a></nav>
+      <label class="n3-switch n3-fm-lite"><input type="checkbox" id="ftLite"><span aria-hidden="true"></span>Lite mode</label>
+      <span class="n3-fm-copy">© <span id="year"></span> Nova · MTN MoMo · Airtel Money · Visa</span>
+    </div>
+  </footer>
+  <nav class="n3-tabbar" id="tabbar" aria-label="Quick navigation"></nav>
+  <div class="n3-drawer" id="n3Drawer" aria-hidden="true"></div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/v3-core.js"></script>
+  <script src="js/v3-auth.js"></script>
+  <script src="js/v3-home.js"></script>
+  <script src="js/v3-search.js"></script>
+  <script src="js/v3-event.js"></script>
+  <script src="js/v3-checkout.js"></script>
+  <script src="js/v3-tickets.js"></script>
+  <script src="js/v3-organiser.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
